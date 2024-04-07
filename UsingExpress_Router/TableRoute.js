@@ -12,6 +12,8 @@ const dummyData = [
     }
 ]
 router.get("/table/data", (req,res) =>{
+    console.log("request base path: " , req.baseUrl)
+    console.log("request host name:",req.hostname)
     res.send(dummyData)
 })
 
